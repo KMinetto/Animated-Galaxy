@@ -117,7 +117,7 @@ const generateGalaxy = () =>
         blending: THREE.AdditiveBlending,
         vertexColors: true,
         uniforms: {
-            uSize: { value: 8 * renderer.getPixelRatio() }
+            uSize: { value: 20 * renderer.getPixelRatio() }
         }
     });
 
