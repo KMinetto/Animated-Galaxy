@@ -15,7 +15,7 @@ void main()
     // Light point pattern
     strength = pow(strength, 10.0);
 
-    // final Color
+    // Final Color
     vec3 finalColor = mix(vec3(0.0), vColor, strength);
 
     gl_FragColor = vec4(finalColor, 1.0);

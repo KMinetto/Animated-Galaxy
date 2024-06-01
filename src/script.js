@@ -117,6 +117,7 @@ const generateGalaxy = () =>
         blending: THREE.AdditiveBlending,
         vertexColors: true,
         uniforms: {
+            uTime: { value: 0 },
             uSize: { value: 20 * renderer.getPixelRatio() }
         }
     });
@@ -180,6 +181,9 @@ const tick = () =>
 
     // Update controls
     controls.update();
+
+    // Update particles
+    material.uniforms.uTime.value = elapsedTime;
 
     // Render
     renderer.render(scene, camera);
